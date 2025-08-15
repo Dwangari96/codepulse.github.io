@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - D-Tec Computer Repairs</title>
+  <style>
+    /* Page fade-in */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Gradient header */
+    header {
+      background: linear-gradient(90deg, #e60023, #990016);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #1a1a1a;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .menu li {
+      position: relative;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Animated underline on hover */
+    .menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      width: 0;
+      height: 2px;
+      background: #e60023;
+      transition: width 0.3s ease;
+    }
+
+    .menu a:hover {
+      background-color: #333;
+    }
+
+    .menu a:hover::after {
+      width: 100%;
+    }
+
+    /* Section styling with lift on hover */
+    section {
+      padding: 20px;
+      background: #1a1a1a;
+      margin: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 4px 15px rgba(230, 0, 35, 0.5);
+    }
+
+    /* Highlight headings in red */
+    h2 {
+      color: #e60023;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* Links in content */
+    a {
+      color: #ff4d4d;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #ff1a1a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We’re here to help. Get in touch!</p>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Reach Out to Us</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>
+        <img src="images/phone_icon.png" alt="Phone" style="width:20px; vertical-align:middle; margin-right: 8px;">
+        +254 790580581
+      </li>
+      <li>
+        <img src="images/email_icon.png" alt="Email" style="width:20px; vertical-align:middle; margin-right: 8px;">
+        dtec@example.com
+      </li>
+      <li>
+        <img src="images/location_icon.png" alt="Location" style="width:20px; vertical-align:middle; margin-right: 8px;">
+        Nairobi, Kenya
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 D-Tec Computer Repairs | All rights reserved.
+  </footer>
+
+</body>
+</html>

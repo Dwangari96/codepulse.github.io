@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services — Coming Soon | D-Tec</title>
+  <style>
+    /* Black + Red theme */
+    body {
+      font-family: Arial, sans-serif;
+      background:#000;
+      color:#fff;
+      margin:0;
+      padding:0;
+      animation:fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+    header{
+      background:linear-gradient(90deg,#e60023,#990016);
+      color:#fff; text-align:center; padding:20px;
+    }
+
+    nav{ background:#1a1a1a; }
+    .menu{ list-style:none; margin:0; padding:0; display:flex; }
+    .menu li{ position:relative; }
+    .menu a{
+      display:block; color:#fff; padding:14px 16px; text-decoration:none;
+      position:relative; transition:background-color .3s ease;
+    }
+    .menu a::after{
+      content:""; position:absolute; left:0; bottom:5px; width:0; height:2px; background:#e60023;
+      transition:width .3s ease;
+    }
+    .menu a:hover{ background:#333; }
+    .menu a:hover::after{ width:100%; }
+
+    .wrap{
+      max-width:900px; margin:24px auto; padding:24px; background:#1a1a1a;
+      border-radius:12px; text-align:center;
+      box-shadow:0 10px 30px rgba(230,0,35,.15);
+    }
+
+    h1,h2{ margin:0 0 8px; }
+    h2{ color:#e60023; }
+
+    /* Spinner */
+    .spinner{
+      width:64px; height:64px; border:6px solid #333; border-top-color:#e60023;
+      border-radius:50%; margin:18px auto; animation:spin 1s linear infinite;
+    }
+    @keyframes spin{ to{ transform:rotate(360deg) } }
+
+    /* Subtle progress bar */
+    .bar{
+      height:8px; background:#333; border-radius:8px; overflow:hidden; margin:18px auto; max-width:420px;
+    }
+    .bar>span{
+      display:block; height:100%; width:40%; background:#e60023; animation:pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse{ 0%{width:25%} 50%{width:75%} 100%{width:25%} }
+
+    /* CTA buttons */
+    .actions{ margin-top:18px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    .btn{
+      background:#e60023; color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none;
+      transition:transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+    }
+    .btn:hover{ background:#ff1a1a; transform:translateY(-2px); box-shadow:0 6px 18px rgba(230,0,35,.35); }
+
+    footer{
+      background:#1a1a1a; color:#fff; text-align:center; padding:15px;
+      position:fixed; width:100%; bottom:0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>D-Tec Computer Repairs</h1>
+    <p>Fast, Reliable & Affordable Repair Services</p>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap">
+    <div class="spinner"></div>
+    <h2>Still working on it</h2>
+    <p>Our Services page is under construction. We’re putting the final touches on something awesome.</p>
+
+    <div class="bar"><span></span></div>
+
+    <div class="actions">
+      <a class="btn" href="contact.html">Need help now? Contact us</a>
+      <a class="btn" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 D-Tec Computer Repairs | All rights reserved.
+  </footer>
+</body>
+</html>
